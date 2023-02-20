@@ -1,3 +1,6 @@
+
+/* Custom Properties */
+
 :root {
     --clr-primary-darkcyan: hsl(158, 36%, 37%);
     --clr-primary-cream: hsl(30, 38%, 92%);
@@ -66,6 +69,7 @@
     isolation: isolate;
   }
 
+  /* General Styling */
 
   body {
     background-color: var(--clr-primary-cream);
@@ -81,6 +85,7 @@
     gap: 1rem;
   }
 
+  /* Product Styling */
 
   .product {
     background-color: var(--clr-neutral-white);
@@ -161,6 +166,8 @@
     background-color: hsl(158, 40%, 16%);
   }
 
+  /* Footer Design */
+
   .attribution {
     color:var(--clr-neutral-darkblue);
     font-size: 0.8rem;
@@ -170,6 +177,8 @@
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
+
+  /* Desktop Responsiveness */
 
   @media (min-width: 600px) {
     .product {
