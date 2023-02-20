@@ -66,6 +66,7 @@
     isolation: isolate;
   }
 
+
   body {
     background-color: var(--clr-primary-cream);
     color:var(--clr-neutral-grayblue);
@@ -77,13 +78,17 @@
     display: grid;
     place-content: center;
     padding: 1rem;
+    gap: 1rem;
   }
+
 
   .product {
     background-color: var(--clr-neutral-white);
 
     border-radius: 0.6rem;
     overflow: hidden;
+    max-width: 600px;
+    display: grid;
   }
 
   .product__content {
@@ -165,3 +170,20 @@
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
+
+  @media (min-width: 600px) {
+    .product {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product__content {
+        padding: 2rem;
+    }
+
+    .button {
+        padding: 0.5rem;
+    }
+    .attribution {
+        font-size: 1rem;
+    }
+}
